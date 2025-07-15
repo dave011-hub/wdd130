@@ -1,62 +1,82 @@
+
+:root {
+  --heading-background-color: #f06;
+  --heading-text-color: #333;
+  --heading-font: 'Montserrat', Helvetica, sans-serif;
+  --primary-color: darkblue;
+  --nav-link-color: white;
+  --padding: 1rem;
+  --nav-padding: 10%;
+  --nav-link-padding: 20px;
+  --default-img-width: 150px;
+  --large-img-width: 200px;
+  --aside-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  --img-box-shadow: 0 0 30px gray;
+  --paragraph-padding: 10%;
+  --aside-bg-color: #eee;
+  --aside-border: 1px solid rgba(0, 0, 0, 0.2);
+  --footer-border-color: #000;
+  --main-max-width: 840px;
+}
+/* Headings */
+h1 {
+  background-color: var(--heading-background-color);
+  color: var(--heading-text-color);
+  font-family: var(--heading-font);
+  padding: var(--padding);
+}
+
+/* Navigation */
 nav {
-    background-color: darkblue;
-    padding: 10%;
+  background-color: var(--primary-color);
+  padding: var(--nav-padding);
 }
 
 nav a {
-    color: white;
-    display: block;
-    padding: 20px;
+  color: var(--nav-link-color);
+  display: block;
+  padding: var(--nav-link-padding);
+  text-decoration: none;
 }
 
-
-h1 {
-    color:  darkblue;
-}
-
-
-
+/* Images */
 img {
-    width: 150px;
-    height: auto;
-    border: 1px solid black;
-    padding: 2px;
-    box-shadow: 0 0 30px gray;
+  width: var(--default-img-width);
+  height: auto;
+  border: 1px solid black;
+  padding: 2px;
+  box-shadow: var(--img-box-shadow);
 }
 
+aside img,
+main img {
+  width: var(--large-img-width);
+  height: auto;
+}
 
+/* Paragraphs */
 p {
-   padding: 10%;
-}
-main{
-    max-width: 840px;
+  padding: var(--paragraph-padding);
 }
 
-
-
-aside{
-    width: 20rem;
-    margin: 1rem;
-    border: 1px solid rgb(0 0 0 / 0.2);
-    padding: 1rem;
-    background-color: #eee;
-    color: #333;
-    text-align: center;
+main {
+  max-width: var(--main-max-width);
 }
 
-aside img{
-    width: 200px;
-    height: auto;
-    }
-
-main img{
-    width: 200px;
-    height: auto;
+aside {
+  width: 20rem;
+  margin: var(--padding) auto;
+  border: var(--aside-border);
+  padding: var(--padding);
+  background-color: var(--aside-bg-color);
+  color: var(--heading-text-color);
+  text-align: center;
+  box-shadow: var(--aside-box-shadow);
 }
 p{padding: 0;}
 
-footer{
-    margin-top: 15px;
-    border-top: 1px solid #000;
-    text-align: center;
+footer {
+  margin-top: 15px;
+  border-top: 1px solid var(--footer-border-color);
+  text-align: center;
 }
