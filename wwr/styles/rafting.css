@@ -60,14 +60,17 @@ nav, p, section, article {
 
 .hero {
   position: relative;
-  max-width: 100%;
+  max-width: 1200%;
   overflow: hidden;
+  width: 100%;
+  height: 400px;
+  margin: auto;
 }
 
 .hero img {
-  display: block;
+  object-fit: cover;
   width: 100%;
-  height: auto;
+  height: 100%;
 }
 
 
@@ -140,21 +143,35 @@ footer {
 
 h1 {
   position: absolute;
-  top: 20px;
+  top: 50%;
   width: 100%;
-  padding: 16px;
+  padding: 1rem 2rem;
   left: 10%;
+  transform: translateX(-50%);
+  color: white;
+  font-size: 2.5rem;
   text-align: center;
   opacity: 0.7;
   background-color: var(--accent1-color);
   color: #0FA3B1; 
+  border-radius: 10px;
 }
 
-img{
+
+.verticle-images img{
   width: 300px;
   height: 200px;
   object-fit: cover;
   }
+
+
+.verticle-images{
+  display: flex;
+  flex-direction: column;
+align-items: center;
+gap: 1rem;
+}
+
 
 
 
