@@ -290,7 +290,7 @@ main img:not(.hero img):not(.hero article img) {
   border-radius: 6px;
   }
 .employee-profiles{
-  grid: 1/7;
+  grid-column: 1/ span 6;
   }
 .employee-grid {
   display: grid;
@@ -349,13 +349,13 @@ main img:not(.hero img):not(.hero article img) {
       grid-template-columns: 1fr;
       }
       }
-  .contact-info , .employee-profiles , .contact-form {
-    grid-column: 1/-1;
-    }
+.contact-info , .employee-profiles , .contact-form {
+  grid-column: 1/-1;
+  }
 
-    .employee-grid {
-      grid-template-columns: 1fr;
-    }
+.employee-grid {
+  grid-template-columns: 1fr;
+  }
    
 
 
