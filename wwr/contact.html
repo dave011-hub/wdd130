@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/rafting.css">
-    <title>contact Us</title>
+    <title>contact Us | Fell The Splash </title>
     <meta name="description" content="Contact as here for any information regarding rafting.Your feedback is just as important to as .">
     <meta name="author" content="David Agbenyegah Bieku">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -55,24 +55,29 @@
         <h2>Send Us a Message </h2>
         <form action="#" method="post">
           <label for="name">Name:</label>
-          <input type="text" id="name" required>
+          <input type="text" id="name"  name="name" required>
           
           
           <label for="email">E-mail</label>
-          <input type="email" id="email" name="email" required>
+          <input type="email" id="email" name="email" name="email" required>
           
           <p>Purpose of Message:</p>
-          <label><input type="radio" name="purpose" value="general" required >General inquiry</label>
-          <label><input type="radio" name="purpose" value="reservation">Reservation</label>
-          <label><input type="radio" name="suggestion">Website Suggestions</label>
+          <input type="radio" id="general" name="purpose" value="general" required >
+          <label for="general">General inquiry</label><br>
+          
+          <input type="radio" id="reservation" name="purpose" value="reservation">
+          <lable for="Reservation">Reservation</label><br>
+
+          <input type="radio" id="suggestion" name="purpose" value="suggestion">
+          <label for="Suggestions">website Suggestions</label><br>
+
 
           <label for="message">Message:</label>
           <textarea name="message" id="message" rows="5"></textarea>
         
-          <label>
-            <input type="checkbox" name="suscribe">
-            Please suscribe me to the monthly newsletter
-          </label>
+          
+            <input type="checkbox" id="suscribe" name="suscribe">
+           <label for="suscribe"> Please suscribe me to the monthly newsletter</label>
           <button type="submit">Send Message</button>
         </form>
 
